@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Gene Bank Indicators</name>
+    <author>Leoltron</author>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>Leoltron.GeneBankIndicators</packageId>
+    <description>Adds visual indicators of how many genepacks are stored within a gene bank. Compatible with most mods that modify vanilla gene bank storage capacity.</description>
+    <modVersion>1.0.0</modVersion>
+    <modIconPath IgnoreIfNoMatchingField="True">GeneBankIndicators/ModIcon</modIconPath>
+
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>farxmai2.genebanksexapnded</li>
+    </loadAfter>
+
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Biotech</packageId>
+            <displayName>Biotech</displayName>
+        </li>
+    </modDependencies>
+</ModMetaData>

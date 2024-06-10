@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{B02CCC64-CA49-4CC8-B7CF-76F4BE289225}") = "Leoltron.GeneBankIndicators", "Source\Leoltron.GeneBankIndicators.csproj", "{04F17FAE-8FD7-4A5A-8050-24A0051E312E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04F17FAE-8FD7-4A5A-8050-24A0051E312E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F17FAE-8FD7-4A5A-8050-24A0051E312E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F17FAE-8FD7-4A5A-8050-24A0051E312E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F17FAE-8FD7-4A5A-8050-24A0051E312E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

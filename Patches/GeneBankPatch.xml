@@ -1,0 +1,22 @@
+﻿<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GeneBank"]/comps</xpath>
+        <value>
+            <li>
+                <compClass>Leoltron.GeneBankIndicators.GenepackContainerWithIndicatorComp</compClass>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GeneBank"]</xpath>
+        <value>
+            <drawerType>MapMeshAndRealTime</drawerType>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GeneBank"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>GeneBankIndicators/Genebank_empty</texPath>
+        </value>
+    </Operation>
+</Patch>
