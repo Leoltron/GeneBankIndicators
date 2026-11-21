@@ -2,27 +2,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netframework4.7.2</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-        <OutputPath>$(RimWorldFolder)\Mods\GeneBankIndicators\Assemblies</OutputPath>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <OutputPath>$(RimWorldDataFolder)/../Mods/GeneBankIndicators/1.7/Assemblies</OutputPath>
         <LangVersion>latest</LangVersion>
         <RootNamespace>Leoltron.GeneBankIndicators</RootNamespace>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugType>none</DebugType>
+    </PropertyGroup>
+
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
-            <HintPath>$(RimWorldFolder)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <HintPath>$(RimWorldDataFolder)/../Assembly-CSharp.dll</HintPath>
             <Private>False</Private>
         </Reference>
-        <Reference Include="UnityEngine.CoreModule">
-            <HintPath>$(RimWorldFolder)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        <Reference Include="UnityStubs">
+          <HintPath>$(RimWorldDataFolder)/../UnityStubs.dll</HintPath>
             <Private>False</Private>
         </Reference>
-        <Reference Include="UnityEngine.IMGUIModule">
-            <HintPath>$(RimWorldFolder)\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        <Reference Include="Waylith">
+          <HintPath>$(RimWorldDataFolder)/../Waylith.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>
